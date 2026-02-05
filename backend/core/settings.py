@@ -26,9 +26,9 @@ load_dotenv(BASE_DIR / ".env")
 SECRET_KEY = "django-insecure-w)vlnl6&%po=#cqj=y@)#seb(ow%dt-7^cumr198mp$!aacf7f"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
+ALLOWED_HOSTS = ["inventory-backend.onrender.com"]
 
-ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -58,6 +58,7 @@ MIDDLEWARE = [
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
     "http://127.0.0.1:3000",
+    "https://inventory-frontend.onrender.com"
 ]
 ROOT_URLCONF = "core.urls"
 
@@ -83,14 +84,7 @@ WSGI_APPLICATION = "core.wsgi.application"
 # https://docs.djangoproject.com/en/6.0/ref/settings/#databases
 
 DATABASES = {
-    "default": {
-        "ENGINE": "django.db.backends.postgresql",
-        "NAME": os.getenv("DB_NAME"),
-        "USER": os.getenv("DB_USER"),
-        "PASSWORD": os.getenv("DB_PASSWORD"),
-        "HOST": os.getenv("DB_HOST"),
-        "PORT": os.getenv("DB_PORT"),
-    }
+    "default": dj_database_url.parse(os.environ.get("DATABASE_URL"), conn_max_age=600)
 }
 
 
