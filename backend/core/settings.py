@@ -28,7 +28,7 @@ SECRET_KEY = "django-insecure-w)vlnl6&%po=#cqj=y@)#seb(ow%dt-7^cumr198mp$!aacf7f
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
-ALLOWED_HOSTS = ["inventory-backend.onrender.com"]
+ALLOWED_HOSTS = ["https://inventory-management-zydk.onrender.com"]
 
 
 
