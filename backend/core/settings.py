@@ -28,7 +28,13 @@ SECRET_KEY = "django-insecure-w)vlnl6&%po=#cqj=y@)#seb(ow%dt-7^cumr198mp$!aacf7f
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
-ALLOWED_HOSTS = ["https://inventory-management-zydk.onrender.com"]
+
+ALLOWED_HOSTS = ["inventory-management-zydk.onrender.com"]
+
+CSRF_TRUSTED_ORIGINS = ["https://inventory-management-zydk.onrender.com"]
+
+SECURE_PROXY_SSL_HEADER = ("HTTP_X_FORWARDED_PROTO", "https")
+
 
 
 
