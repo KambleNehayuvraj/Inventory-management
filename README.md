@@ -69,7 +69,7 @@ inventory-management-app
 ⚙️ Backend Setup (Local)
 
 Clone the repository
-git clone https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
+git clone https://github.com/KambleNehayuvraj/Inventory-management
 
 cd inventory-management-app/backend
 
