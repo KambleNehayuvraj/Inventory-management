@@ -6,10 +6,10 @@ The application supports complete CRUD operations, analytics dashboard, and thir
 🚀 Live Deployment Links
 
 Frontend (Live UI):
-👉 https://REPLACE_WITH_FRONTEND_URL
+👉 https://inventory-management-frontend-63dt.onrender.com
 
 Backend API:
-👉 https://REPLACE_WITH_BACKEND_URL
+👉 https://inventory-management-zydk.onrender.com
 
 🛠️ Tech Stack
 
@@ -189,17 +189,8 @@ Connected to Supabase PostgreSQL
 
 Frontend
 
-Deployed on Vercel / Render Static
+Deployed on Render 
 
-🧪 Testing Guide (Submission Requirement)
-
-Open live frontend link
-
-Perform Create → View → Update → Delete operations
-
-Open dashboard and verify analytics update
-
-Test third-party currency API
 
 📌 API Endpoints
 
@@ -214,18 +205,6 @@ GET /api/dashboard/
 
 Currency
 GET /api/currency/
-
-📹 Screen Recording
-
-A 3–5 minute screen recording demonstrates:
-
-Live application access
-
-Full CRUD functionality
-
-Dashboard & reports
-
-Third-party API working
 
 👩‍💻 Author
 
